@@ -6,7 +6,9 @@
     // }
 
      $connect = mysqli_connect('ggradio.ru', 'vlad', "ChinChanJopa12", "TheChoices");
-     echo($connect);
+     if($connect){
+        echo("УРААААААААА");
+     };
 
 
 ?>
