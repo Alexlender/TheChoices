@@ -29,16 +29,16 @@
 
     <div class="content">
         <div class="compare-container">
-            <img src="../img/linux.jpg" alt="линукс???">
+            <img src="/template/images/linux.jpg" alt="линукс???">
             <div id="span-compare">Линукс</div>
         </div>
-        <img src="../img/or.gif" alt="или" width="70px" height="50px">
+        <img src="/template/images/or.gif" alt="или" width="70px" height="50px">
         <div class="compare-container">
-            <img src="../img/richbitter.jpg" alt="рич биттер">
+            <img src="/template/images/richbitter.jpg" alt="рич биттер">
             <div id="span-compare">Rich Bitter</div>
         </div>
     </div>
 
 </body>
-<script src="../js/script.js"></script>
+
 </html>
