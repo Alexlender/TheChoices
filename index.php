@@ -1,16 +1,9 @@
 <?php
-    // session_start();
+     session_start();
 
-    // if(!$_SESSION['user']){
-    //     header('Location: /register.php');
-    // }
-
-     $connect = mysqli_connect('ggradio.ru', 'vlad', "ChinChanJopa12", "TheChoices");
-     if($connect){
-        echo("УРААААААААА");
-     };
-
-
+     if(!$_SESSION['user']){
+         header('Location: /reg.php');
+     }
 ?>
 
 
