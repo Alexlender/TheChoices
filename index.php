@@ -1,20 +1,27 @@
-<!DOCTYPE html>
+<?php
+    // session_start();
+
+    // if(!$_SESSION['user']){
+    //     header('Location: /register.php');
+    // }
+
+    $connect = mysqli_connect('ggradio.ru', 'vlad', "ChinChanJopa12", "TheChoices");
+    echo($connect);
+
+    
+?>
+
+
 <html>
 <head>
     <title>Что лучше??</title>
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS">
-    <meta name="description" content="Что лучше? Узнайте тут">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
-
 
 <body>
     <header>
         <div class="header">
-            <img src="../img/logo.gif">
+            <img src="/template/images/logo.gif">
             <div class="nav-container">
                 <nav>
                     <a class="nav_link" href="#">Главная</a>
@@ -24,7 +31,7 @@
         </div>
     </header>
 
-    <h1 class="first_text">Как из гита удалить экзешник?????????</h1>
+    <h1 class="first_text">Что лучше?</h1>
 
 
     <div class="content">
