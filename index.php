@@ -5,8 +5,8 @@
     //     header('Location: /register.php');
     // }
 
-    // $connect = mysqli_connect('ggradio.ru', 'vlad', "ChinChanJopa12", "TheChoices");
-    // echo($connect);
+     $connect = mysqli_connect('ggradio.ru', 'vlad', "ChinChanJopa12", "TheChoices");
+     echo($connect);
 
 
 ?>
