@@ -40,8 +40,8 @@ function get_all_items()
         $item->image = $row["image"];
         $item->views = $row["views"];
         $item->wins = $row["wins"];
+        $item->price = $row["price"];
         array_push($return, $item);
-
     }
 
 
