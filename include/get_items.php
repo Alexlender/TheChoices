@@ -14,7 +14,7 @@ function get_items()
     $row = $result->fetch_assoc();
     $item2 = new item();
     $item2->$name = $row["name"];
-    $item2->$image=  $row["image"];
+    $item2->$image = $row["image"];
 
     return array($item1, $item2);
 }
