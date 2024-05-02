@@ -21,14 +21,18 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
     <div class="mega-cont">
     <div class="mini-cont" style="margin:auto; width:fit-content; display: grid; grid-template-columns:2fr 1fr;  gap: 20px;">
+    <form method="GET" action="adminpage.php">
 
-    <select name="sort">
-        <option value="" disabled selected>Сортировака</option>
-        <option value="poor">Сначала недорогие</option>
-        <option value="cool">Сначала крутые</option>
-        <option value="alph">Сначала на букву "А"</option>
-    </select>
-    <input type='submit' value="Показать"/>
+        <select name="sort">
+            <option value="" disabled selected>Сортировака</option>
+            <!-- <option value="poor">Сначала недорогие</option> -->
+            <option value="price">Сначала дорогие</option>
+            <option value="winrate">Сначала крутые</option>
+            <option value="name">Сначала на букву "А"</option>
+        </select>
+        <input type='submit' value="Показать"/>
+
+    </form>
 
     
     <input type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto"/>
@@ -37,7 +41,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
     <?php
     require_once 'include/get_items.php';
 
-    $items = get_all_items();
+    $items = get_all_items($_GET['sort']);
     $counter = 1;
    // echo $items[0];
     foreach ($items as &$item) {
