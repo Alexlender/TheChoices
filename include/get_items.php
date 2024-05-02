@@ -32,14 +32,15 @@ function get_all_items()
     $result = $connect->query("SELECT * FROM items");
 
     $return = [];
-    
-    while ($row = $result->fetch_assoc()){
-        
+
+    while ($row = $result->fetch_assoc()) {
+
         $item = new item();
         $item->name = $row["name"];
         $item->image = $row["image"];
         $item->views = $row["views"];
         $item->wins = $row["wins"];
+        array_push($return, $item);
 
     }
 
