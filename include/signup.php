@@ -5,7 +5,7 @@ require_once 'connect.php';
 $name = $_POST['name'];
 $login = $_POST['login'];
 $email = $_POST['email'];
-$passwd = $_POST['password'];
+$passwd = $_POST['passwd'];
 $passwd_confirm = $_POST['passwd_confirm'];
 
 if ($passwd != $passwd_confirm) {
