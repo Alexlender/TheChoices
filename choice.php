@@ -12,4 +12,4 @@ $selected->views++;
 $notselected->views++;
 
 $connect->query("UPDATE `items` set `wins` = '$selected->wins', `views` = `$selected->views` where `name` = '$selected->name'");
-$connect->query("UPDATE `items` set `views` = `$notselected->views` where `name` = '$notselected->name'");
+// $connect->query("UPDATE `items` set `views` = `$notselected->views` where `name` = '$notselected->name'");
