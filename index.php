@@ -34,14 +34,17 @@ if (!$_SESSION['user']) {
 
         echo '<div class="compare-container">
     <img src="/template/images/' . $items[0]->image . '" alt="линукс???">
+    <div id="span-compare">' . $items[0]->name . '</div>
+    </div>';
+       
+        echo '<img src="/template/images/or.gif" alt="или" width="70px" height="50px">';
+
+        echo '<div class="compare-container">
+    <img src="/template/images/' . $items[1]->image . '" alt="линукс???">
     <div id="span-compare">' . $items[1]->name . '</div>
     </div>';
+
         ?>
-        <img src="/template/images/or.gif" alt="или" width="70px" height="50px">
-        <div class="compare-container">
-            <img src="/template/images/richbitter.jpg" alt="рич биттер">
-            <div id="span-compare">Rich Bitter</div>
-        </div>
 
 
     </div>
