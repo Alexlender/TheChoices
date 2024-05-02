@@ -31,7 +31,8 @@ if (!$_SESSION['user']) {
         require_once 'include/get_items.php';
 
         $items = get_items();
-        echo  $items[0]->$name;
+        echo  print_r($items[0]);
+
         echo '<div class="compare-container">
     <img src="/template/images/' . $items[0]->image . '" alt="линукс???">
     <div id="span-compare">' . $items[1]->name . '</div>
