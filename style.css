@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #aaa;
+  background-color: #ffffff;
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   line-height: 1.6;
@@ -33,10 +33,11 @@ input::placeholder {
 }
 
 header {
-  background-color: violet;
+  background-color: rgb(249, 249, 249);
   width: auto;
   margin: auto;
   top: 0;
+  border-bottom: 2px solid rgb(196, 196, 196);
   z-index: 1000;
 }
 
