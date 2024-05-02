@@ -4,8 +4,15 @@ require_once 'connect.php';
 
 $result = $connect->query("SELECT * FROM items order by RAND() LIMIT 2");
 
-while ($row = $result->fetch_assoc()) {
-    echo print_r($row["name"]);
-}
+
+$row = $result->fetch_assoc();
+$item1 = new item();
+$item1->$name = $row["name"]
+$item1->$image = $row["image"]
+
+$row = $result->fetch_assoc();
+$item2 = new item();
+$item2->$name = $row["name"]
+$item2->$image = $row["image"]
 
 ?>
