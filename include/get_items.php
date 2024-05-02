@@ -25,8 +25,11 @@ function get_items()
     return array($item1, $item2);
 }
 
-function get_all_items($order = "views")
+function get_all_items($order)
 {
+    if (!$order)
+        $order = "views";
+
     require_once 'connect.php';
 
     $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items order by $order DESC;");
