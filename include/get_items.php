@@ -15,4 +15,3 @@ $item2 = new item();
 $item2->$name = $row["name"];
 $item2->$image = $row["image"];
 
-?>
