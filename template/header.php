@@ -9,7 +9,7 @@
         </div>
     </div>
     <?php
-    if ($_SESSION['isAdmin'] == 1){
+    if ($_SESSION['user']['isAdmin'] == 1){
         echo "<a href='../adminpage.php'>Админ панель</a>";
     }
     ?>
