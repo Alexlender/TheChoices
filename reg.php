@@ -8,7 +8,7 @@
 
 <html>
 <head>
-	<title>АвтоКупи</title>
+	<title>ЧТО ЛУЧШЕ??????</title>
 	<metacharset=”utf-8”>
 	<link href="style_form.css" rel="stylesheet">
 </head>
