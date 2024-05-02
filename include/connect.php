@@ -17,5 +17,5 @@ $connect = new mysqli($host, $user, $password, $dbname, $port, $socket)
         public int $wins;
         public ?string $image;
         public int $price;
-
+        public float $winrate;
     }
