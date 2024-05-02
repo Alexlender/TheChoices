@@ -36,7 +36,7 @@
 
     <?php 
     
-        $result = $mysqli->query("SELECT id FROM test ORDER BY id ASC");
+       require_once "include/get_items.php"
         
     ?>
     
