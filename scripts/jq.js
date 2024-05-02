@@ -1,6 +1,6 @@
 $("div.compare-container").on("click", function (obj) {
 
-    console.log(obj["id"].value)
+    console.log(obj)
 
 
 });
