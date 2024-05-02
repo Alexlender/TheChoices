@@ -1,7 +1,11 @@
 <?php
 
-    $connect = mysqli_connect('ggradio.ru', 'vlad', "ChinChanJopa12", "TheChoices");
+$host="ggradio.ru";
+$port=3306;
+$socket="";
+$user="vlad";
+$password="ChinChanJopa12";
+$dbname="TheChoices";
 
-    if (!$connect) {
-        die('Error connect to Database');
-    }
+$con = new mysqli($host, $user, $password, $dbname, $port, $socket)
+    or die ('Could not connect to the database server' . mysqli_connect_error());
