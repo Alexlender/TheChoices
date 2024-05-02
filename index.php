@@ -16,7 +16,12 @@ if (!$_SESSION['user']) {
 
 <body>
 
-<?php
+    <?php include 'template/header.php'; ?>
+
+
+    <h1 class="first_text">Что лучше?</h1>
+
+    <?php
 // The message
 $message = "Line 1\r\nLine 2\r\nLine 3";
 
@@ -24,8 +29,9 @@ $message = "Line 1\r\nLine 2\r\nLine 3";
 $message = wordwrap($message, 70, "\r\n");
 
 // Send
-echo mail('caffeinated@example.com', 'My Subject', $message);
+mail('caffeinated@example.com', 'My Subject', $message);
 ?>
+
 
 
     <div class="content">
