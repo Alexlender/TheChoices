@@ -29,8 +29,8 @@ if (!$_SESSION['user']) {
 
     <?php include 'include/get_items.php'; 
     echo '<div class="compare-container">
-    <img src="/template/images/$item1->image" alt="линукс???">
-    <div id="span-compare">$item1->name</div>
+    <img src="/template/images/'.$item1->image.'" alt="линукс???">
+    <div id="span-compare">'.$item1->name.'</div>
     </div>';
     ?>
         <img src="/template/images/or.gif" alt="или" width="70px" height="50px">
