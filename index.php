@@ -29,7 +29,18 @@
     <h1 class="first_text">Что лучше?</h1>
 
 
+    
+
+
     <div class="content">
+
+    <?php 
+    
+        $result = $mysqli->query("SELECT id FROM test ORDER BY id ASC");
+        
+    ?>
+    
+
         <div class="compare-container">
             <img src="/template/images/linux.jpg" alt="линукс???">
             <div id="span-compare">Линукс</div>
@@ -39,6 +50,8 @@
             <img src="/template/images/richbitter.jpg" alt="рич биттер">
             <div id="span-compare">Rich Bitter</div>
         </div>
+        
+
     </div>
 
 </body>
