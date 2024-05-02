@@ -31,16 +31,15 @@ if (!$_SESSION['user']) {
         require_once 'include/get_items.php';
 
         $items = get_items();
-        $_SESSION['items'] = $items;
 
-        echo '<div class="compare-container" name="1">
+        echo '<div class="compare-container">
     <img src="/template/images/' . $items[0]->image . '" alt="линукс???">
     <div id="span-compare">' . $items[0]->name . '</div>
     </div>';
-       
+
         echo '<img src="/template/images/or.gif" alt="или" width="70px" height="50px">';
 
-        echo '<div class="compare-container" name="2">
+        echo '<div class="compare-container">
     <img src="/template/images/' . $items[1]->image . '" alt="линукс???">
     <div id="span-compare">' . $items[1]->name . '</div>
     </div>';
@@ -50,8 +49,7 @@ if (!$_SESSION['user']) {
 
     </div>
 
-
-
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="scripts/jq.js">
 </html>
