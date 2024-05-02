@@ -1,3 +1,8 @@
+<?php
+    session_start();
+
+?>
+
 <header>
     <div class="header">
         <img src="/template/images/logo.gif">
