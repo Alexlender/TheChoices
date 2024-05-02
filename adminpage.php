@@ -21,7 +21,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
     <div class="mega-cont">
     <div class="mini-cont" style="margin:auto; width:fit-content; display: grid; grid-template-columns:2fr 1fr;  gap: 20px;">
-    <input type="text" placeholder="поиск" style="font-size:20px; width:20%; margin:auto"/>
+    <input type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto"/>
     <a href="load_item.php">Загрузить объект</a>
     </div>
     <?php
