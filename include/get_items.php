@@ -25,4 +25,25 @@ function get_items()
     return array($item1, $item2);
 }
 
+function get_all_items()
+{
+    require_once 'connect.php';
+
+    $result = $connect->query("SELECT * FROM items");
+
+    $return = [];
+    
+    while ($row = $result->fetch_assoc()){
+        
+        $item = new item();
+        $item->name = $row["name"];
+        $item->image = $row["image"];
+        $item->views = $row["views"];
+        $item->wins = $row["wins"];
+
+    }
+
+
+    return $return;
+}
 
