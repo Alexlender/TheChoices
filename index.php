@@ -31,6 +31,7 @@ if (!$_SESSION['user']) {
         require_once 'include/get_items.php';
 
         $items = get_items();
+        $_SESSION['items'] = $items;
 
         echo '<div class="compare-container" id="1">
     <img src="/template/images/' . $items[0]->image . '" alt="линукс???">
