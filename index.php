@@ -27,7 +27,8 @@ if (!$_SESSION['user']) {
 
     <div class="content">
 
-    <?php include 'include/get_items.php'; 
+    <?php 
+    require_once 'include/get_items.php'; 
     echo '<div class="compare-container">
     <img src="/template/images/'.$item1->image.'" alt="линукс???">
     <div id="span-compare">'.$item1->name.'</div>
