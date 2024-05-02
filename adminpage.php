@@ -1,9 +1,9 @@
 <?php
-	session_start();
+session_start();
 
-	if ($_SESSION['user']['isAdmin'] != 1) {
-        header('Location: ../index.php');
-    }
+if ($_SESSION['user']['isAdmin'] != 1) {
+    header('Location: ../index.php');
+}
 ?>
 
 
@@ -17,5 +17,23 @@
 <body>
 
     <?php include 'template/header.php'; ?>
-    админ панель
+
+
+
+    <?php
+    require_once 'include/get_items.php';
+
+    $items = get_all_items();
+    foreach ($items as &$item) {
+        $winrate = floatval($item->wins)/floatval($item->views)*100;
+
+        echo"
+        <p>
+                Винрейт для $item->name = $winrate%
+        </p>";
+    }
+
+
+    ?>
+
 </body>
