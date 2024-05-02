@@ -27,7 +27,7 @@ if (!$_SESSION['user']) {
 
     <div class="content">
 
-    <?php include 'template/get_items.php'; ?>
+    <?php include 'include/get_items.php'; ?>
 
 
         <div class="compare-container">
