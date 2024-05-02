@@ -12,12 +12,14 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 <head>
     <title>Админка</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-admin.css">
 </head>
 
 <body>
 
     <?php include 'template/header.php'; ?>
 
+    <div class="mega-cont">
 
 
     <?php
@@ -29,12 +31,15 @@ if ($_SESSION['user']['isAdmin'] != 1) {
         $winrate = floatval($item->wins)/floatval($item->views)*100;
 
         echo"
+        <div class='cont-item'>
+        <img src='/template/images/$item->image'></img>
         <p>
                 Винрейт для $item->name = $winrate%
-        </p>";
+        </p></div>";
     }
 
 
     ?>
+    </div>
 
 </body>

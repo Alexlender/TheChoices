@@ -1,0 +1,16 @@
+.mega-cont{
+    display: grid;
+    grid-template: "a a a a a" "b b b b b" "c c c c c";
+    gap: 20px;
+    width: 100%;
+    height: fit-content;
+}
+
+.cont-item{
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+.cont-item > img{
+    width: 100px;
+    height: 100px;
+}
