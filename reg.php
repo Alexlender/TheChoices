@@ -35,8 +35,8 @@ if ($_SESSION['user']) {
             <?php
             if ($_SESSION['message']) {
                 died($_SESSION['message']);
+                unset($_SESSION['message']);
             }
-            unset($_SESSION['message']);
             ?>
         </form>
     </div>
