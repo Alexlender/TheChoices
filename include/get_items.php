@@ -25,11 +25,11 @@ function get_items()
     return array($item1, $item2);
 }
 
-function get_all_items()
+function get_all_items($order = "views")
 {
     require_once 'connect.php';
 
-    $result = $connect->query("SELECT * FROM items");
+    $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items;");
 
     $return = [];
 
@@ -41,6 +41,7 @@ function get_all_items()
         $item->views = $row["views"];
         $item->wins = $row["wins"];
         $item->price = $row["price"];
+        $item->winrate = $row["winrate"];
         array_push($return, $item);
     }
 
