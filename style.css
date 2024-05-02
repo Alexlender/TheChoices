@@ -5,13 +5,13 @@
 }
 
 body {
-  background-color: white;
+  background-color: rgb(82, 82, 82);
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   line-height: 1.6;
   font-size: 15px;
   text-align: center;
-  color: #333;
+  color: #ffffff;
 }
 
 .logo-container {
@@ -28,16 +28,16 @@ ul {
 }
 
 input::placeholder {
-  color: #555;
+  color: #dbdbdb;
   font-size: 0.8em;
 }
 
 header {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(43, 43, 43);
   width: auto;
   margin: auto;
   top: 0;
-  border-bottom: 2px solid rgb(196, 196, 196);
+  border-bottom: 2px solid rgb(135, 135, 135);
   z-index: 1000;
 }
 
