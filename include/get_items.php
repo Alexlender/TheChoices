@@ -29,7 +29,7 @@ function get_all_items($order = "views")
 {
     require_once 'connect.php';
 
-    $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items;");
+    $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items order by $order DESC;");
 
     $return = [];
 
