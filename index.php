@@ -21,7 +21,16 @@ if (!$_SESSION['user']) {
 
     <h1 class="first_text">Что лучше?</h1>
 
+    <?php
+    $to      = 'sashacharugin@mail.ru';
+    $subject = 'the subject';
+    $message = 'hello';
+    $headers = 'From: webmaster@example.com'       . "\r\n" .
+                 'Reply-To: webmaster@example.com' . "\r\n" .
+                 'X-Mailer: PHP/' . phpversion();
 
+    mail($to, $subject, $message, $headers);
+?>
 
 
 
