@@ -1,45 +1,38 @@
 <?php
-     session_start();
+session_start();
 
-     if(!$_SESSION['user']){
-         header('Location: /reg.php');
-     }
+if (!$_SESSION['user']) {
+    header('Location: /reg.php');
+}
 ?>
 
 
 <html>
+
 <head>
     <title>Что лучше??</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <img src="/template/images/logo.gif">
-            <div class="nav-container">
-                <nav>
-                    <a class="nav_link" href="#">Главная</a>
-                    <a class="nav_link" href="#">Форум</a>
-                </nav>
-            </div>
-        </div>
-    </header>
 
+    <?php include 'template/header.php'; ?>
+
+    
     <h1 class="first_text">Что лучше?</h1>
 
 
-    
+
 
 
     <div class="content">
 
-    <?php 
-    
-       require_once "include/get_items.php"
-        
-    ?>
-    
+        <?php
+
+        require_once "include/get_items.php"
+
+            ?>
+
 
         <div class="compare-container">
             <img src="/template/images/linux.jpg" alt="линукс???">
@@ -50,7 +43,7 @@
             <img src="/template/images/richbitter.jpg" alt="рич биттер">
             <div id="span-compare">Rich Bitter</div>
         </div>
-        
+
 
     </div>
 
