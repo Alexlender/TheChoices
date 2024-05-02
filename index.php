@@ -29,7 +29,7 @@ $message = "Line 1\r\nLine 2\r\nLine 3";
 $message = wordwrap($message, 70, "\r\n");
 
 // Send
-mail('caffeinated@example.com', 'My Subject', $message);
+echo print_r(mail('caffeinated@example.com', 'My Subject', $message));
 ?>
 
 
