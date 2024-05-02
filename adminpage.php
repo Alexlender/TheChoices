@@ -21,7 +21,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
     <div class="mega-cont">
 
-
+    <input type="text" placeholder="поиск" style="font-size:20px;"/>
     <?php
     require_once 'include/get_items.php';
 
