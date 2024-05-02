@@ -1,4 +1,4 @@
-$("div.compare-container").onClick(function (obj) {
+$("div.compare-container").on("click", function (obj) {
 
     console.log(obj.name)
 
