@@ -7,9 +7,9 @@
     ini_set('display_errors', 'On');
 
     $login = $_POST['login'];
-    $password = md5($_POST['password']);
+    $passwd = md5($_POST['passwd']);
 
-    $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$login' AND `passwd` = '$password'");
+    $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$login' AND `passwd` = '$passwd'");
     if (mysqli_num_rows($check_user) > 0) {
 
         $user = mysqli_fetch_assoc($check_user);
@@ -17,8 +17,9 @@
         $_SESSION['user'] = [
             "id" => $user['id'],
             "login" => $user['login'],
-            "full_name" => $user['full_name'],
-            "email" => $user['email']
+            "name" => $user['name'],
+            "email" => $user['email'],
+            "isAdmin" => $isAdmin
         ];
         header('Location: ../index.php');
     }

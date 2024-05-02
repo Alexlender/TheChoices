@@ -2,18 +2,18 @@
 session_start();
 require_once 'connect.php';
 
-$full_name = $_POST['full_name'];
+$name = $_POST['name'];
 $login = $_POST['login'];
 $email = $_POST['email'];
-$password = $_POST['password'];
-$password_confirm = $_POST['password_confirm'];
+$passwd = $_POST['password'];
+$passwd_confirm = $_POST['passwd_confirm'];
 
-if ($password != $password_confirm) {
+if ($passwd != $passwd_confirm) {
     $_SESSION['passErr'] = 1;
     header('Location: ../reg.php');
 } else {
-    $password = md5($password);
-
+    $passwd = md5($passwd);
+    $isAdmin = 0;
     $ans = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$login'");
 
     if (mysqli_num_rows($ans) > 0) {
@@ -26,7 +26,7 @@ if ($password != $password_confirm) {
             $_SESSION['message'] = 'Данный email занят';
             header('Location: ../reg.php');
         } else {
-            mysqli_query($connect, "INSERT INTO `users` (`id`, `name`, `login`, `email`, `passwd`) VALUES (NULL, '$full_name', '$login', '$email', '$password')");
+            mysqli_query($connect, "INSERT INTO `users` (`id`, `name`, `login`, `email`, `passwd`, `isAdmin`) VALUES (NULL, '$name', '$login', '$email', '$passwd', '$isAdmin')");
 
             $_SESSION['message'] = 'Регистрация прошла успешно';
             header('Location: ../auth.php');
