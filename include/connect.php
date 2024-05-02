@@ -12,9 +12,10 @@ $connect = new mysqli($host, $user, $password, $dbname, $port, $socket)
 
     class item
     {
-        public ?string $name = "стоковое значение";
+        public ?string $name;
         public int $views;
         public int $wins;
-        public ?string $image = "";
+        public ?string $image;
+        public int $price;
 
     }
