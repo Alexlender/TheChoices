@@ -51,7 +51,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
         <h1>$counter</h1>
         <img src='/template/images/$item->image'></img>
         <p>
-                Винрейт для $item->name = $item->winrate%
+                Винрейт для $item->name = $item->winrate% | Стоимость = $item->price
         </p></div>";
         $counter++;
     }
