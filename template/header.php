@@ -8,4 +8,5 @@
             </nav>
         </div>
     </div>
+    <a href="../include/signout.php">Выйти</a>
 </header>
