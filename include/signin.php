@@ -19,7 +19,7 @@
             "login" => $user['login'],
             "name" => $user['name'],
             "email" => $user['email'],
-            "isAdmin" => $isAdmin
+            "isAdmin" => $user['isAdmin']
         ];
         header('Location: ../index.php');
     }
