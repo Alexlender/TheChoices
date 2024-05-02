@@ -35,7 +35,7 @@ if (!$_SESSION['user']) {
 
         echo '<div class="compare-container">
     <img src="/template/images/' . $items[0]->$image . '" alt="линукс???">
-    <div id="span-compare">' . $items[1]->$name . '</div>
+    <div id="span-compare">' . $items[1]->name . '</div>
     </div>';
         ?>
         <img src="/template/images/or.gif" alt="или" width="70px" height="50px">
