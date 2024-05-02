@@ -1,6 +1,5 @@
 $("div.compare-container").on("click", function (obj) {
 
-    console.log(obj['currentTarget']["id"].value)
-
+    $get('/choice.php', {value : obj['currentTarget']["id"]})
 
 });
