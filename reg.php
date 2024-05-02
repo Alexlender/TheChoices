@@ -4,14 +4,18 @@ session_start();
 if ($_SESSION['user']) {
     header('Location: ../profile.php');
 }
-?>
+
+if ($_SESSION['passErr'] == 1){
+    echo "<script>alert('Пароли не совпадают')</script>";
+}
+?> 
 
 <html>
 
 <head>
     <title>ЧТО ЛУЧШЕ??????</title>
     <metacharset=”utf-8”>
-        <link href="style_form.css" rel="stylesheet">
+        <link href="style_sign.css" rel="stylesheet">
 </head>
 
 <body>
