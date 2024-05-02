@@ -2,7 +2,7 @@
 	session_start();
 
 	if ($_SESSION['user']) {
-        header('Location: ../profile.php');
+        header('Location: ../index.php');
     }
 ?>
 
@@ -26,12 +26,6 @@
 			<p>
 				<a href="/forgot_password.php">Восстановление пароля</a>
 			</p>
-			<?php
-				if ($_SESSION['message']) {
-					echo '<p class="msg">' . $_SESSION['message'] . '</p>';
-				}
-				unset($_SESSION['message']);
-			?> 
 		</form>
 	</div>
 </body>
