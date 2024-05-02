@@ -49,7 +49,10 @@ if (!$_SESSION['user']) {
 
     </div>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/jq.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="scripts/jq.js"></script>
+
+
 </html>
