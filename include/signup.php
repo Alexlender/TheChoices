@@ -10,7 +10,7 @@ $password_confirm = $_POST['password_confirm'];
 
 if ($password != $password_confirm) {
     $_SESSION['message'] = 'Эээх ты... Не запомнил свой же пароль, они не совпадают!';
-    header('Location: ../register.php');
+    header('Location: ../reg.php');
 } 
 else {
 
