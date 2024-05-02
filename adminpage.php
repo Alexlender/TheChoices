@@ -24,7 +24,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
     require_once 'include/get_items.php';
 
     $items = get_all_items();
-    echo $items[0];
+   // echo $items[0];
     foreach ($items as &$item) {
         $winrate = floatval($item->wins)/floatval($item->views)*100;
 
