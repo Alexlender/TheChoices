@@ -27,13 +27,12 @@ if (!$_SESSION['user']) {
 
     <div class="content">
 
-    <?php include 'include/get_items.php'; ?>
-
-
-        <div class="compare-container">
-            <img src="/template/images/linux.jpg" alt="линукс???">
-            <div id="span-compare">Линукс</div>
-        </div>
+    <?php include 'include/get_items.php'; 
+    echo '<div class="compare-container">
+    <img src="/template/images/$item1->image" alt="линукс???">
+    <div id="span-compare">$item1->name</div>
+    </div>';
+    ?>
         <img src="/template/images/or.gif" alt="или" width="70px" height="50px">
         <div class="compare-container">
             <img src="/template/images/richbitter.jpg" alt="рич биттер">
