@@ -10,7 +10,6 @@ function get_items()
     $item1 = new item();
     $item1->name = $row["name"];
     $item1->image = $row["image"];
-    echo  print_r($item1->name);
 
     $row = $result->fetch_assoc();
     $item2 = new item();
