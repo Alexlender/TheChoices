@@ -3,8 +3,7 @@
         <img src="/template/images/logo.gif">
         <div class="nav-container">
             <nav>
-                <a class="nav_link" href="#">Главная</a>
-                <a class="nav_link" href="#">Форум</a>
+                <a class="nav_link" href="../index.php">Главная</a>
             </nav>
         </div>
     </div>
