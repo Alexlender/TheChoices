@@ -21,21 +21,24 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
     <div class="mega-cont">
 
-    <input type="text" placeholder="поиск" style="font-size:20px;"/>
+    <input type="text" placeholder="поиск" style="font-size:20px; width:20%; margin:auto"/>
     <?php
     require_once 'include/get_items.php';
 
     $items = get_all_items();
+    $couter = 1;
    // echo $items[0];
     foreach ($items as &$item) {
         $winrate = floatval($item->wins)/floatval($item->views)*100;
 
         echo"
         <div class='cont-item'>
+        <h1>$counter</h1>
         <img src='/template/images/$item->image'></img>
         <p>
                 Винрейт для $item->name = $winrate%
         </p></div>";
+        $counter++;
     }
 
 
