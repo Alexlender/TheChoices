@@ -18,7 +18,7 @@
 			<label>Логин</label>
 			<input type="text" name="login" placeholder="Введите логин">
 			<label>Пароль</label>
-			<input type="password" name="password" placeholder="Введите пароль">
+			<input type="password" name="passwd" placeholder="Введите пароль">
 			<button type="submit">Войти</button>
 			<p>
 				<a href="/reg.php">Регистрация</a>

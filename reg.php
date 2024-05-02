@@ -22,15 +22,15 @@ if ($_SESSION['passErr'] == 1){
     <div class="auth__form">
         <form action="include/signup.php" method="post" enctype="multipart/form-data">
             <label>Фамилия и имя</label>
-            <input type="text" name="full_name" placeholder="Введите фамилию и имя">
+            <input type="text" name="name" placeholder="Введите фамилию и имя">
             <label>Логин</label>
             <input type="text" name="login" placeholder="Введите логин">
             <label>Почта</label>
             <input type="email" name="email" placeholder="Введите свою электронную почту">
             <label>Пароль</label>
-            <input type="password" name="password" placeholder="Введите пароль">
+            <input type="password" name="passwd" placeholder="Введите пароль">
             <label>Подтверждение пароля</label>
-            <input type="password" name="password_confirm" placeholder="Подтвердите пароль">
+            <input type="password" name="passwd_confirm" placeholder="Подтвердите пароль">
             <button type="submit">Зарегистрироваться</button>
             <p>
                 <a href="/auth.php">Авторизация</a>
