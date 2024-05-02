@@ -32,22 +32,8 @@ if ($_SESSION['user']) {
                 <a href="/auth.php">Авторизация</a>
             </p>
 
-            <?php
-            if ($_SESSION['message']) {
-                died($_SESSION['message']);
-                unset($_SESSION['message']);
-            }
-            ?>
         </form>
     </div>
 </body>
 
 </html>
-
-<?php
-            function died($error)
-            { ?>
-                <script>alert("<?php echo $error; ?>")</script>
-
-                <?php die();
-            } ?>
