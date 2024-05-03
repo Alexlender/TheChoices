@@ -35,8 +35,8 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
             </form>
 
-            <form method="GET" action="search.php">
-                <input name='text' type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto" />
+            <form method="GET" action="adminpage.php">
+                <input name='search' type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto" />
                 <input type="submit" value="Найти"/>
             </form>
             <div style="width:50%;">
@@ -50,7 +50,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
         <?php
         require_once 'include/get_items.php';
 
-        $items = get_all_items($_GET['sort']);
+        $items = get_all_items($_GET['sort'], $_GET['search']);
         $counter = 1;
         foreach ($items as &$item) {
 

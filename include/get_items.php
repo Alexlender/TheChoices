@@ -25,14 +25,17 @@ function get_items()
     return array($item1, $item2);
 }
 
-function get_all_items($order)
+function get_all_items($order, $search)
 {
+    require_once 'connect.php';
+
     if (!$order)
         $order = "views";
 
-    require_once 'connect.php';
-
-    $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items order by $order DESC;");
+    if (!$search)
+        $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items order by $order DESC;");
+    else
+        $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items WHERE instr(`name`, $search) > 0 order by $order DESC;");
 
     $return = [];
 
