@@ -30,7 +30,7 @@ function get_all_items($order, $search)
     require_once 'connect.php';
 
     if (!$order)
-        $order = "views";
+        $order = "winrate";
 
     if (!$search)
         $search = "";
