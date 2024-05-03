@@ -12,5 +12,5 @@
         echo "<a href='../adminpage.php'>Админ панель</a>";
     }
     ?>
-    <a href="../include/signout.php">Выйти</a>
+    <a href="../user/signout.php">Выйти</a>
 </header>

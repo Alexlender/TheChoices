@@ -20,7 +20,7 @@ if ($_SESSION['passErr'] == 1){
 
 <body>
     <div class="auth__form">
-        <form action="include/signup.php" method="post" enctype="multipart/form-data">
+        <form action="user/signup.php" method="post" enctype="multipart/form-data">
             <label>Фамилия и имя</label>
             <input type="text" name="name" placeholder="Введите фамилию и имя">
             <label>Логин</label>

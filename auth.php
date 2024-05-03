@@ -14,7 +14,7 @@
 </head>
 <body>
 	<div class="auth__form">
-		<form action="include/signin.php" method="post">
+		<form action="user/signin.php" method="post">
 			<label>Логин</label>
 			<input type="text" name="login" placeholder="Введите логин">
 			<label>Пароль</label>
