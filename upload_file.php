@@ -7,9 +7,9 @@ require_once 'include/connect.php';
 
 
 
-$data = file_get_contents($_FILES['uploadedfile']['table.xml']); 
+// $data = file_get_contents($_FILES); 
 // $xml = $_POST['xml'];
 
-echo print_r($data);
+echo print_r($_FILES);
 
 ?>
