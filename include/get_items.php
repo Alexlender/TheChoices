@@ -12,7 +12,6 @@ function get_items()
     $item1->image = $row["image"];
     $item1->views = $row["views"];
     $item1->wins = $row["wins"];
-    $item1->views++;
 
     $row = $result->fetch_assoc();
     $item2 = new item();
@@ -20,7 +19,6 @@ function get_items()
     $item2->image = $row["image"];
     $item2->views = $row["views"];
     $item2->wins = $row["wins"];
-    $item2->views++;
 
     return array($item1, $item2);
 }
