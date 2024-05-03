@@ -55,7 +55,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
         <h1>$counter</h1>
         <img src='/template/images/$item->image' alt='$item->image'></img>
         <div style='display:grid; grid-template-rows:1fr 1fr;'> 
-        <p>
+        <p style='font-family: Colibri'>
                 Винрейт <span style='font-family: Comic Sans MS'>$item->name</span> $item->winrate%
         </p>
         <p>
