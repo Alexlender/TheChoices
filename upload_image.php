@@ -4,6 +4,7 @@ session_start();
 
 if ($_SESSION['user']['isAdmin'] != 1) {
     header('Location: /index.php');
+    die();
 }
 
 echo print_r($_FILES);
