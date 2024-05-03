@@ -33,14 +33,14 @@ if (!$_SESSION['user']) {
         $_SESSION['items'] = $items;
 
         echo '<div class="compare-container" id="1">
-    <img src="/template/images/' . $items[0]->image . '" alt="линукс???">
+    <img src="/template/images/' . $items[0]->image . '" alt="'.$items[0]->name.'">
     <div id="span-compare">' . $items[0]->name . '</div>
     </div>';
 
         echo '<img src="/template/images/or.gif" alt="или" width="70px" height="50px">';
 
         echo '<div class="compare-container" id="2">
-    <img src="/template/images/' . $items[1]->image . '" alt="линукс???">
+    <img src="/template/images/' . $items[1]->image . '" alt="'.$items[1]->name.'">
     <div id="span-compare">' . $items[1]->name . '</div>
     </div>';
 
