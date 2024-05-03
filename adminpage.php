@@ -36,7 +36,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
     
     <input type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto"/>
-    <a href="load_item.php">Загрузить объект</a>
+    <input type="file"/>
     </div>
     <?php
     require_once 'include/get_items.php';
