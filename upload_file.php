@@ -2,7 +2,9 @@
 session_start();
 require_once 'include/connect.php';
 
-$xml = $_POST['xml'];
+$postData = file_get_contents('php://input');
+$xml = simplexml_load_string($postData);
+// $xml = $_POST['xml'];
 
 echo print_r($xml);
 
