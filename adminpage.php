@@ -21,7 +21,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
     <div class="mega-cont">
         <div class="mini-cont"
-            style="margin:auto; width:fit-content; display: grid; grid-template-columns:1fr 1fr 1fr;  gap: 20px;">
+            style="margin:auto; width:fit-content; display: grid; grid-template-columns:2fr 1fr 2fr;  gap: 30px;">
             <form method="GET" action="adminpage.php">
 
                 <select name="sort">
@@ -52,7 +52,6 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
         $items = get_all_items($_GET['sort']);
         $counter = 1;
-        // echo $items[0];
         foreach ($items as &$item) {
 
             echo "
