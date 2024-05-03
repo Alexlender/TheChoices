@@ -92,7 +92,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
             </form>
 
             <form method="POST" enctype="multipart/form-data" action="reset.php">
-                <input type="submit" value="Сбросить вообще всё" />
+                <input id="red_button" type="submit" value="Сбросить вообще всё" />
             </form>
         </div>
     </div>
