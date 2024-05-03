@@ -7,7 +7,7 @@ require_once 'include/connect.php';
 
 
 
-$data = file_get_contents($_FILES["xml"]); 
+$data = $_FILES["xml"]; 
 echo print_r($data);
 //$xml = $_POST['xml'];
 
