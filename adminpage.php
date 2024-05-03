@@ -51,7 +51,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
             </div>
 
 
-            <form method="POST" enctype="multipart/form-data" action="upload_file.php"
+            <form method="POST" enctype="multipart/form-data" action="upload_image.php"
                 style="display: grid; grid-template-rows: 1fr 1fr 1fr">
                 <label>Загрузить картинки</label>
                 <input name="image" type="file" accept="image/jpg" multiple="multiple"/>
