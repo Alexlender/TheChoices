@@ -11,7 +11,7 @@ $file = $_FILES["xml"]['tmp_name'];
 
 $result = $connect->query("LOAD XML LOCAL INFILE '$file' INTO TABLE items;");
 
-echo print_r($result);
+echo $result;
 
 
 
