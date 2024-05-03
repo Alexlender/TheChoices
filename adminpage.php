@@ -19,7 +19,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
     <?php include 'template/header.php'; ?>
 
-    <div class="super-mega-cont">
+    <div class="super-mega-cont" style="display: flex; flex-direction: row; justify-content: space-between;">
         <div class="mega-cont">
             <div class="mini-cont"
                 style="margin:auto; width:fit-content; display: grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr;  gap: 30px;">
@@ -70,7 +70,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
             ?>
         </div>
 
-        <div class=forms>
+        <div class=forms style="width: 30%;display: flex; flex-direction: column; align-items: flex-start;">
 
             <div style="width:50%;">
                 <form method="POST" enctype="multipart/form-data" action="upload_file.php"
