@@ -55,6 +55,13 @@ if ($_SESSION['user']['isAdmin'] != 1) {
                 style="display: grid; grid-template-rows: 1fr 1fr 1fr">
                 <label>Загрузить картинки</label>
                 <input name="image[]" type="file" accept="image/jpg" multiple="multiple"/>
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple"/>
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple"/>
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple"/>
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple"/>
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple"/>
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple"/>
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple"/>
                 <input type="submit" value="Загрузить" />
             </form>
 
