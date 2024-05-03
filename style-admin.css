@@ -22,3 +22,6 @@
     margin: auto;
 }
 
+#red_button:hover{
+    color: #d60505;
+}
