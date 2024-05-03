@@ -35,11 +35,16 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
             </form>
 
-
-            <input type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto" />
-            <div style="display: grid; grid-template-rows: 1fr 1fr;">
-                <label>Загрузить XML-файл новой штуки</label>
-                <input type="file" accept="text/xml" />
+            <form method="GET" action="search.php" style="display:grid; grid-template-rows: 1fr 1fr;">
+                <input name='text' type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto" />
+                <input type="submit" value="Найти"/>
+            </form>
+            <div style="display: grid; grid-template-rows: 1fr 1fr 1fr;">
+                <form method="GET" action="upload_file.php">
+                    <label>Загрузить XML-файл новой штуки</label>
+                    <input name="xml" type="file" accept="text/xml" />
+                    <input type="submit" value="Загрузить"/>
+                </form>
             </div>
         </div>
         <?php
