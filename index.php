@@ -21,16 +21,6 @@ if (!$_SESSION['user']) {
 
     <h1 class="first_text">Что лучше?</h1>
 
-    <?php
-// The message
-$message = "Line 1\r\nLine 2\r\nLine 3";
-
-// In case any of our lines are larger than 70 characters, we should use wordwrap()
-$message = wordwrap($message, 70, "\r\n");
-
-// Send
-echo print_r(mail('caffeinated@example.com', 'My Subject', $message));
-?>
 
 
 
@@ -43,14 +33,14 @@ echo print_r(mail('caffeinated@example.com', 'My Subject', $message));
         $_SESSION['items'] = $items;
 
         echo '<div class="compare-container" id="1">
-    <img src="/template/images/' . $items[0]->image . '" alt="линукс???">
+    <img src="/template/images/' . $items[0]->image . '" alt="'.$items[0]->name.'">
     <div id="span-compare">' . $items[0]->name . '</div>
     </div>';
 
         echo '<img src="/template/images/or.gif" alt="или" width="70px" height="50px">';
 
         echo '<div class="compare-container" id="2">
-    <img src="/template/images/' . $items[1]->image . '" alt="линукс???">
+    <img src="/template/images/' . $items[1]->image . '" alt="'.$items[1]->name.'">
     <div id="span-compare">' . $items[1]->name . '</div>
     </div>';
 
