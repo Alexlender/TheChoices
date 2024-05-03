@@ -1,18 +1,18 @@
 <?php
 
-echo $_FILES['image']['name'][2];
+echo print_r($_FILES);
 
-$total = count($_FILES['image']['name'][2]);
+$total = count($_FILES['image']['name']);
 
 for( $i=0 ; $i < $total ; $i++ ) {
     $tmpFilePath = $_FILES['image']['tmp_name'][$i];
     $file_name = $_FILES['image']['name'][$i];
 
     if ($tmpFilePath != ""){
-        move_uploaded_file($file, "template/images/". $file_name );
+        move_uploaded_file($tmpFilePath, "template/images/". $file_name );
     }
 }
 
-// header("Location: /adminpage.php");
+header("Location: /adminpage.php");
 
 ?>
