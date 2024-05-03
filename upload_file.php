@@ -9,7 +9,12 @@ echo print_r($postData);
 
 $file = $_FILES["xml"]['tmp_name'];
 
-$result = $connect->query("LOAD XML LOCAL INFILE '$file' INTO TABLE items;");
+$result = $connect->query("LOAD XML LOCAL INFILE 'as$file' INTO TABLE items;");
 
 echo print_r($result);
+
+
+
+
+
 ?>
