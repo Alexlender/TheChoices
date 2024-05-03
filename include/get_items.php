@@ -12,7 +12,6 @@ function get_items()
     $item1->image = $row["image"];
     $item1->views = $row["views"];
     $item1->wins = $row["wins"];
-    $item1->views++;
 
     $row = $result->fetch_assoc();
     $item2 = new item();
@@ -20,7 +19,6 @@ function get_items()
     $item2->image = $row["image"];
     $item2->views = $row["views"];
     $item2->wins = $row["wins"];
-    $item2->views++;
 
     return array($item1, $item2);
 }
@@ -30,12 +28,13 @@ function get_all_items($order, $search)
     require_once 'connect.php';
 
     if (!$order)
-        $order = "views";
+        $order = "winrate";
 
     if (!$search)
-        $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items order by $order DESC;");
-    else
-        $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items WHERE `name` LIKE '%{$search}%' order by $order DESC;");
+        $search = "";
+    // $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items order by $order DESC;");
+    // else
+    $result = $connect->query("SELECT *, CASE when views=0 then 0 else ROUND((wins/views)*100, 2) END as winrate FROM TheChoices.items WHERE `name` LIKE '%{$search}%' order by $order DESC;");
 
     $return = [];
 
