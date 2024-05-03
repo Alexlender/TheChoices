@@ -10,6 +10,6 @@ require_once 'include/connect.php';
 // $data = file_get_contents($_FILES); 
 // $xml = $_POST['xml'];
 
-echo print_r(array_keys($_FILES));
+echo array_keys($_FILES);
 
 ?>
