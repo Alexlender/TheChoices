@@ -35,7 +35,7 @@ function get_all_items($order, $search)
     // if (!$search)
     // $result = $connect->query("SELECT *, ROUND((wins/views)*100, 2) as winrate FROM TheChoices.items order by $order DESC;");
     // else
-    $result = $connect->query("SELECT *, (CASE when views=0 then 0 else ROUND((wins/views)*100, 2) as winrate) FROM TheChoices.items WHERE `name` LIKE '%{$search}%' order by $order DESC;");
+    $result = $connect->query("SELECT *, (CASE when views=0 then 0 else ROUND((wins/views)*100, 2)) as winrate FROM TheChoices.items WHERE `name` LIKE '%{$search}%' order by $order DESC;");
 
     $return = [];
 
