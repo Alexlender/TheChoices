@@ -2,7 +2,7 @@
 session_start();
 // require_once 'include/connect.php';
 
-$postData = file_get_contents($_FILES["xml"]['full_path']);
+$postData = file_get_contents($_FILES["xml"]['tmp_name']);
 echo $postData;
 
 
