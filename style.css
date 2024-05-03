@@ -176,14 +176,14 @@ header {
 }
 
 .compare-container:hover #span-compare {
-  transform: translateY(30px);
+  transform: translateY(35px);
 }
 
 
 .compare-container li span {
   position: relative;
   z-index: 10000;
-  font-size: 16px;
+  font-size: 25px;
 }
 
 .compare-container li {
@@ -192,6 +192,7 @@ header {
 
 .compare-container {
   width: fit-content;
+  font-size: 25px;
 }
 
 .content>img {
