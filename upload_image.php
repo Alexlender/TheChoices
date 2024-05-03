@@ -1,6 +1,6 @@
 <?php
 
-echo $_FILES['image'];
+echo print_r($_FILES['image']);
 
 $total = count($_FILES['image']['name']);
 
