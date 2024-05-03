@@ -2,7 +2,7 @@
 session_start();
 
 if (!$_SESSION['user']) {
-    header('Location: /reg.php');
+    //header('Location: /auth.php');
 }
 ?>
 
