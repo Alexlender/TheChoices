@@ -1,7 +1,8 @@
 <?php
 
+echo $_FILES['image']['name'][2];
 
-$total = count($_FILES['image']['name']);
+$total = count($_FILES['image']['name'][2]);
 
 for( $i=0 ; $i < $total ; $i++ ) {
     $tmpFilePath = $_FILES['image']['tmp_name'][$i];
@@ -12,6 +13,6 @@ for( $i=0 ; $i < $total ; $i++ ) {
     }
 }
 
-header("Location: /adminpage.php");
+// header("Location: /adminpage.php");
 
 ?>
