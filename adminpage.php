@@ -54,9 +54,9 @@ if ($_SESSION['user']['isAdmin'] != 1) {
             <form method="POST" enctype="multipart/form-data" action="upload_image.php"
                 style="display: grid; grid-template-rows: 1fr 1fr 1fr">
                 <label>Загрузить картинки</label>
-                <input name="image[]" type="file" accept="image/jpg" multiple="multiple"/>
-                <input name="image[]" type="file" accept="image/jpg" multiple="multiple" hidden/>
-                <input name="image[]" type="file" accept="image/jpg" multiple="multiple" hidden/>
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple" />
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple" hidden />
+                <input name="image[]" type="file" accept="image/jpg" multiple="multiple" hidden />
                 <input type="submit" value="Загрузить" />
             </form>
 
@@ -74,7 +74,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
             echo "
         <div class='cont-item'>
         <h1>$counter</h1>
-        <img src='/template/images/$item->image'></img>
+        <img src='/template/images/$item->image' alt='$item->image'></img>
         <div style='display:grid; grid-template-rows:1fr 1fr;'> 
         <p>
                 Винрейт $item->name $item->winrate%
