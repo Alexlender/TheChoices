@@ -1,12 +1,10 @@
 <?php
 
-require_once 'include/connect.php';
-session_start();
 
 $file = $_FILES["image"]['tmp_name'];
+$file_name = $_FILES['image']['name'];
 
-$connect->query("LOAD XML LOCAL INFILE '$file' INTO TABLE items;");
-
+move_uploaded_file($file, "template/images/". $file_name );
 
 header("Location: /adminpage.php");
 
