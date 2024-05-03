@@ -50,9 +50,15 @@ if ($_SESSION['user']['isAdmin'] != 1) {
         <div class='cont-item'>
         <h1>$counter</h1>
         <img src='/template/images/$item->image'></img>
+        <div style='display:grid; grid-template-columns:1fr 1fr;'> 
         <p>
-                Винрейт для $item->name = $item->winrate% | Стоимость = $item->price$
-        </p></div>";
+                Винрейт $item->name $item->winrate%
+        </p>
+        <p>
+            Стоимость $item->price рублей
+        </p>
+        </div>
+        </div>";
         $counter++;
     }
 
