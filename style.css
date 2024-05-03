@@ -192,6 +192,7 @@ header {
 
 .compare-container {
   width: fit-content;
+  font-size: 25px;
 }
 
 .content>img {
