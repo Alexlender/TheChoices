@@ -1,16 +1,14 @@
 <?php
+
+require_once 'include/onnect.php';
 session_start();
-// require_once 'include/connect.php';
+
 
 $postData = simplexml_load_string(file_get_contents($_FILES["xml"]['tmp_name']));
 echo print_r($postData);
 
+$file = $_FILES["xml"]['tmp_name'];
 
-
-// $data = $_FILES["xml"]; 
-// echo print_r($data);
-//$xml = $_POST['xml'];
-
-// echo print_r(simplexml_load_string(file_get_contents('php://xml')));
+$result = $connect->query("LOAD XML LOCAL INFILE '$file' INTO TABLE items;");
 
 ?>
