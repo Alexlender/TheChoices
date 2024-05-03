@@ -13,6 +13,6 @@ for( $i=0 ; $i < $total ; $i++ ) {
     }
 }
 
-// header("Location: /adminpage.php");
+header("Location: /adminpage.php");
 
 ?>
