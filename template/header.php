@@ -9,14 +9,14 @@
     </div>
     <?php
     if ($_SESSION['user']['isAdmin'] == 1){
-        echo "<a href='../adminpage'>Админ панель</a>";
+        echo "<a href='../adminpage.php'>Админ панель</a>";
     }
 
     if ($_SESSION['user']){
-        echo "<a href='../user/signout'>Выйти</a>";
+        echo "<a href='../user/signout.php'>Выйти</a>";
     }
     else{
-        echo "<a href='../user/signin'>Войти</a>";
+        echo "<a href='../user/signin.php'>Войти</a>";
     }
     ?>
 
