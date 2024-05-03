@@ -21,7 +21,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
     <div class="mega-cont">
         <div class="mini-cont"
-            style="margin:auto; width:fit-content; display: grid; grid-template-columns:2fr 1fr 2fr;  gap: 30px;">
+            style="margin:auto; width:fit-content; display: grid; grid-template-columns:2fr 1fr 2fr 1fr;  gap: 30px;">
             <form method="GET" action="adminpage.php">
 
                 <select name="sort">
@@ -37,15 +37,26 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
             <form method="GET" action="adminpage.php">
                 <input name='search' type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto" />
-                <input type="submit" value="Найти"/>
+                <input type="submit" value="Найти" />
             </form>
+
+
             <div style="width:50%;">
-                <form method="POST" enctype="multipart/form-data" action="upload_file.php" style="display: grid; grid-template-rows: 1fr 1fr 1fr">
+                <form method="POST" enctype="multipart/form-data" action="upload_file.php"
+                    style="display: grid; grid-template-rows: 1fr 1fr 1fr">
                     <label>Загрузить XML-файл новой штуки</label>
                     <input name="xml" type="file" accept="text/xml" />
-                    <input type="submit" value="Загрузить"/>
+                    <input type="submit" value="Загрузить" />
                 </form>
             </div>
+
+
+            <form method="POST" enctype="multipart/form-data" action="upload_file.php"
+                style="display: grid; grid-template-rows: 1fr 1fr 1fr">
+                <label>Загрузить картинки</label>
+                <input name="image" type="file" accept="image/jpg" multiple="multiple"/>
+                <input type="submit" value="Загрузить" />
+            </form>
         </div>
         <?php
         require_once 'include/get_items.php';
