@@ -1,8 +1,8 @@
 <?php
 
-echo $_FILES['image']['name'][2];
+echo $_FILES['image']['name'];
 
-$total = count($_FILES['image']['name'][2]);
+$total = count($_FILES['image']['name']);
 
 for( $i=0 ; $i < $total ; $i++ ) {
     $tmpFilePath = $_FILES['image']['tmp_name'][$i];
