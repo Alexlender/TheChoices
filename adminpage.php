@@ -21,7 +21,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
     <div class="mega-cont">
         <div class="mini-cont"
-            style="margin:auto; width:fit-content; display: grid; grid-template-columns:2fr 1fr 1fr;  gap: 30px;">
+            style="margin:auto; width:fit-content; display: grid; grid-template-columns:2fr 1fr 2fr;  gap: 30px;">
             <form method="GET" action="adminpage.php">
 
                 <select name="sort">
@@ -39,7 +39,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
                 <input name='text' type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto" />
                 <input type="submit" value="Найти"/>
             </form>
-            <div >
+            <div style="width:50%;">
                 <form method="GET" action="upload_file.php" style="display: grid; grid-template-rows: 1fr 1fr 1fr">
                     <label>Загрузить XML-файл новой штуки</label>
                     <input name="xml" type="file" accept="text/xml" />
