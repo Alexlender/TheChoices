@@ -37,7 +37,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
 
             <input type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto" />
-            <div>
+            <div style="display: grid; grid-template-rows: 1fr 1fr;">
                 <label>Загрузить XML-файл новой штуки</label>
                 <input type="file" accept="text/xml" />
             </div>
