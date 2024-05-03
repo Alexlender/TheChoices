@@ -196,14 +196,13 @@ header {
 
 .content>img {
   margin: auto;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .content {
   width: fit-content;
   margin-top: 15%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
 }
 
