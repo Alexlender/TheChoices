@@ -9,7 +9,7 @@ for( $i=0 ; $i < $total ; $i++ ) {
     $file_name = $_FILES['image']['name'][$i];
 
     if ($tmpFilePath != ""){
-        move_uploaded_file($file, "template/images/". $file_name );
+        move_uploaded_file($tmpFilePath, "template/images/". $file_name );
     }
 }
 
