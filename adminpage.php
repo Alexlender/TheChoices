@@ -39,8 +39,8 @@ if ($_SESSION['user']['isAdmin'] != 1) {
                 <input name='text' type="text" placeholder="поиск" style="font-size:20px; width:80%; margin:auto" />
                 <input type="submit" value="Найти"/>
             </form>
-            <div style="display: grid; grid-template-rows: 1fr 1fr 1fr">
-                <form method="GET" action="upload_file.php">
+            <div >
+                <form method="GET" action="upload_file.php" style="display: grid; grid-template-rows: 1fr 1fr 1fr">
                     <label>Загрузить XML-файл новой штуки</label>
                     <input name="xml" type="file" accept="text/xml" />
                     <input type="submit" value="Загрузить"/>
