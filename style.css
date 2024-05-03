@@ -172,7 +172,6 @@ header {
 }
 #span-compare{
   width: 100%;
-  text-wrap: wrap;
 }
 .compare-container:hover img {
   transform: scale(1.2);
