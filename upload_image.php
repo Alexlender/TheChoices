@@ -1,5 +1,11 @@
 <?php
 
+session_start();
+
+if ($_SESSION['user']['isAdmin'] != 1) {
+    header('Location: /index.php');
+}
+
 echo print_r($_FILES);
 
 $total = count($_FILES['image']['name']);
