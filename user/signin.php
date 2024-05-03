@@ -1,7 +1,7 @@
 <?php
 
     session_start();
-    require_once 'connect.php';
+    require_once '../include/connect.php';
 
     error_reporting(-1);
     ini_set('display_errors', 'On');

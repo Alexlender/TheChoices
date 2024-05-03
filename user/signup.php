@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'connect.php';
+require_once '../include/connect.php';
 
 $name = $_POST['name'];
 $login = $_POST['login'];
