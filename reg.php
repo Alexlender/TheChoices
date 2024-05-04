@@ -12,6 +12,9 @@ if ($_SESSION['passErr'] == 1){
 
 <html>
 
+
+
+
 <head>
     <title>ЧТО ЛУЧШЕ??????</title>
     <metacharset=”utf-8”>

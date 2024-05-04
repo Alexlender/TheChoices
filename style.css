@@ -173,6 +173,7 @@ header {
 #span-compare{
   width: 300px;
 }
+
 .compare-container:hover img {
   transform: scale(1.2);
 }
