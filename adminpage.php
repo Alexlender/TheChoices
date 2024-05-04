@@ -26,10 +26,9 @@ if ($_SESSION['user']['isAdmin'] != 1) {
                 <form method="GET" action="adminpage.php">
 
                     <select name="sort">
-                        <option value="" disabled selected>Сортировака</option>
                         <!-- <option value="poor">Сначала недорогие</option> -->
                         <option value="price">Сначала дорогие</option>
-                        <option value="winrate">Сначала крутые</option>
+                        <option value="winrate" selected>Сначала крутые</option>
                         <option value="name">Сначала на букву "А"</option>
                     </select>
                     <input type='submit' value="Показать" />
