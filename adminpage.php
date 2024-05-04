@@ -41,7 +41,10 @@ if ($_SESSION['user']['isAdmin'] != 1) {
                 </form>
 
                 <form method="GET" action="adminpage.php">
-                    <input name='search' type="text" placeholder="поиск"
+                    <?php 
+                    $search = $_GET['search'];
+                    echo "<input name='search' type='text' placeholder='поиск' value='$search'";
+                    ?>
                         style="font-size:20px; width:80%; margin:auto" />
                     <input type="submit" value="Найти" />
                 </form>
