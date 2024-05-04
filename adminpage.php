@@ -29,7 +29,8 @@ if ($_SESSION['user']['isAdmin'] != 1) {
                         <!-- <option value="poor">Сначала недорогие</option> -->
                         <?php 
                         $selected = $_GET['order'];
-
+                        if (!$selected == '')
+                            $selected = 'winrate';
                         echo "<option value='price'" + $selected == "price" ? "selected" : "" + ">Сначала дорогие</option>";
                         echo "<option value='winrate'" + $selected == "winrate" ? "selected" : "" + ">Сначала крутые</option>";
                         echo "<option value='name'" + $selected == "name" ? "selected" : "" + ">Сначала на букву \"А\"</option>";
