@@ -171,8 +171,9 @@ header {
   transition-timing-function: ease;
 }
 #span-compare{
-  width: 200px;
+  width: 300px;
 }
+
 .compare-container:hover img {
   transform: scale(1.2);
 }
