@@ -28,7 +28,7 @@ if ($_SESSION['user']['isAdmin'] != 1) {
                     <select name="sort">
                         <!-- <option value="poor">Сначала недорогие</option> -->
                         <?php
-                        $selected = $_GET['order'];
+                        $selected = $_GET['sort'];
                         if (!$selected == '')
                             $selected = 'winrate';
                         echo "<option value='price'" . ($selected == "price" ? "selected" : "") . ">Сначала дорогие</option>";
