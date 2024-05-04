@@ -8,8 +8,8 @@ $notselected = $_GET["value"] == 0 ? $_SESSION["items"][0] : $_SESSION["items"][
 
 
 echo '<div class="compare-container" id="1">
-<img src="/template/images/' . $selected ->image . '" alt="' . $selected ->name . '">
-<div id="span-compare">' . $selected ->name . '</div>
+<img src="/template/images/' . $selected->image . '" alt="' . $selected->name . '">
+<div id="span-compare">' . $selected->name . '</div>
 </div>';
 
 echo '<div class="compare-container" id="2">
