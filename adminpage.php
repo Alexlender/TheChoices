@@ -31,9 +31,9 @@ if ($_SESSION['user']['isAdmin'] != 1) {
                         $selected = $_GET['order'];
                         if (!$selected == '')
                             $selected = 'winrate';
-                        echo "<option value='price'" + ($selected == "price" ? "selected" : "") + ">Сначала дорогие</option>";
-                        echo "<option value='winrate'" + ($selected == "winrate" ? "selected" : "") + ">Сначала крутые</option>";
-                        echo "<option value='name'" + ($selected == "name" ? "selected" : "") + ">Сначала на букву \"А\"</option>";
+                        echo "<option value='price'" . ($selected == "price" ? "selected" : "") . ">Сначала дорогие</option>";
+                        echo "<option value='winrate'" . ($selected == "winrate" ? "selected" : "") . ">Сначала крутые</option>";
+                        echo "<option value='name'" . ($selected == "name" ? "selected" : "") . ">Сначала на букву \"А\"</option>";
                         ?>
                     </select>
                     <input type='submit' value="Показать" />
