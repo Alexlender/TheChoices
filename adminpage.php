@@ -27,9 +27,13 @@ if ($_SESSION['user']['isAdmin'] != 1) {
 
                     <select name="sort">
                         <!-- <option value="poor">Сначала недорогие</option> -->
-                        <option value="price">Сначала дорогие</option>
-                        <option value="winrate" selected>Сначала крутые</option>
-                        <option value="name">Сначала на букву "А"</option>
+                        <?php 
+                        $selected = $_GET['order'];
+
+                        echo "<option value='price'" + $selected == "price" ? "selected" : "" + ">Сначала дорогие</option>";
+                        echo "<option value='winrate'" + $selected == "winrate" ? "selected" : "" + ">Сначала крутые</option>";
+                        echo "<option value='name'" + $selected == "name" ? "selected" : "" + ">Сначала на букву \"А\"</option>";
+                        ?>
                     </select>
                     <input type='submit' value="Показать" />
 
