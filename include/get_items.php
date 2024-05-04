@@ -30,7 +30,7 @@ function get_all_items($order, $search)
     if (!$order)
         $order = "winrate";
 
-    $DESC = $order == "name" ? "" : "DECS";
+    $DESC = $order == "name" ? "" : "DESC";
 
     if (!$search)
         $search = "";
