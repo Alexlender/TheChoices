@@ -46,6 +46,8 @@ if ($_SESSION['user']['isAdmin'] != 1) {
             <?php
             require_once 'include/get_items.php';
 
+            $some_error = error12();
+
             $items = get_all_items($_GET['sort'], $_GET['search']);
             $counter = 1;
             foreach ($items as &$item) {
