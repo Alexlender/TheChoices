@@ -4,7 +4,7 @@ require_once 'include/connect.php';
 session_start();
 
 $selected = $_GET["value"] == 1 ? $_SESSION["items"][0] : $_SESSION["items"][1];
-$notselected = $_GET["value"] == 2 ? $_SESSION["items"][0] : $_SESSION["items"][1];
+$notselected = $_GET["value"] == 2 ? $_SESSION["items"][1] : $_SESSION["items"][0];
 
 
 // echo '<div class="compare-container" id="1">
