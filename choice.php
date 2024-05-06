@@ -4,7 +4,7 @@ require_once 'include/connect.php';
 session_start();
 
 $selected = $_GET["value"] == 1 ? $_SESSION["items"][0] : $_SESSION["items"][1];
-$notselected = $_GET["value"] == 2 ? $_SESSION["items"][1] : $_SESSION["items"][0];
+$notselected = $_GET["value"] == 2 ? $_SESSION["items"][0] : $_SESSION["items"][1];
 
 
 // echo '<div class="compare-container" id="1">
@@ -21,5 +21,3 @@ $connect->query("UPDATE `items` set `wins` = `wins` + 1, `views` = `views` + 1 w
 $connect->query("UPDATE `items` set `views` = `views` + 1 where `name` = '$notselected->name'");
 //echo print_r();
 //echo print_r();
-
-$_SESSION["items"] = null;
