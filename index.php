@@ -29,7 +29,8 @@ if (!$_SESSION['user']) {
         <?php
         require_once 'include/get_items.php';
 
-        $items = get_items();
+        if(!$_SESSION['items'])
+            $items = get_items();
         $_SESSION['items'] = $items;
 
         echo '<div class="compare-container" id="1">
