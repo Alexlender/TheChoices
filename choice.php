@@ -17,7 +17,7 @@ $notselected = $_GET["value"] == 2 ? $_SESSION["items"][1] : $_SESSION["items"][
 // <div id="span-compare">' . $notselected->name . '</div>
 // </div>';
 
-echo print_r($connect->query("UPDATE `items` set `wins` = `wins` + 1, `views` = `views` + 1 where `name` = '$selected->name'"));
-echo print_r($connect->query("UPDATE `items` set `views` = `views` + 1 where `name` = '$notselected->name'"));
+//echo print_r($connect->query("UPDATE `items` set `wins` = `wins` + 1, `views` = `views` + 1 where `name` = '$selected->name'"));
+//echo print_r($connect->query("UPDATE `items` set `views` = `views` + 1 where `name` = '$notselected->name'"));
 
 $_SESSION["items"] = [];
