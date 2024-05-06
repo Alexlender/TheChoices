@@ -29,9 +29,10 @@ if (!$_SESSION['user']) {
         <?php
         require_once 'include/get_items.php';
 
-        if(!$_SESSION['items'])
+        if(!$_SESSION['items']){
             $items = get_items();
-        $_SESSION['items'] = $items;
+            $_SESSION['items'] = $items;
+        }
 
         echo '<div class="compare-container" id="1">
     <img src="/template/images/' . $items[0]->image . '" alt="'.$items[0]->name.'">
