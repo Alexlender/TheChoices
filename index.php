@@ -26,7 +26,7 @@ if (!$_SESSION['user']) {
         <?php
         require_once 'include/get_items.php';
 
-        if($_SESSION['items'] == NULL){
+        if(is_null($_SESSION['items'])){
             $_SESSION['items'] = get_items();
         }
 
