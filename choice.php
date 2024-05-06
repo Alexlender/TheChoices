@@ -22,4 +22,4 @@ $connect->query("UPDATE `items` set `views` = `views` + 1 where `name` = '$notse
 //echo print_r();
 //echo print_r();
 
-$_SESSION["items"] = [];
+$_SESSION["items"] = null;
