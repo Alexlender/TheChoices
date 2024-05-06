@@ -21,15 +21,12 @@ if (!$_SESSION['user']) {
 
     <h1 class="first_text">Что лучше?</h1>
 
-
-
-
     <div class="content">
 
         <?php
         require_once 'include/get_items.php';
 
-        if(!$_SESSION['items']){
+        if($_SESSION['items'] == null){
             $items = get_items();
             $_SESSION['items'] = $items;
         }
